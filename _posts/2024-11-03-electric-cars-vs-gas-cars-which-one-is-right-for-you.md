@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Electric Cars vs. Gas Cars: Which One Is Right for You?
+title: Electric Cars vs. Gas Cars Which One Is Right for You?
 description: Explore the differences between electric and gas cars to determine which type of vehicle is the best fit for your needs.
 summary: Discover the pros and cons of electric cars and gas cars, helping you make an informed decision on which vehicle is right for you.
 tags: electric cars gas cars comparison vehicle choice
