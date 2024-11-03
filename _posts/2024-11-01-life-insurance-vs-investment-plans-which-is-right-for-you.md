@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Life Insurance vs. Investment Plans: Which is Right for You?
+title: Life Insurance vs. Investment Plans Which is Right for You?
 description: Explore the key differences between life insurance and investment plans to determine which option best fits your financial goals.
 summary: Life insurance and investment plans serve different purposes in financial planning. This guide helps you understand the key differences and decide which is right for you.
 tags: life insurance investment finance planning
