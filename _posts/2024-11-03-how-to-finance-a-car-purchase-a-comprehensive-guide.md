@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Finance a Car Purchase: A Comprehensive Guide
+title: How to Finance a Car Purchase A Comprehensive Guide
 description: Explore the different financing options available for purchasing a car and learn how to secure the best deal.
 summary: Discover effective strategies for financing your next car purchase, including tips on loans, leasing, and budgeting.
 tags: car financing auto loans vehicle purchase guide
