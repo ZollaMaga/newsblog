@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Protect Your Online Privacy: Essential Tools and Tips
+title: How to Protect Your Online Privacy Essential Tools and Tips
 description: Discover effective tools and tips to safeguard your online privacy in an increasingly digital world.
 summary: Learn how to protect your online privacy with essential tools and practical tips for safer browsing and data security.
 tags: online privacy data security internet safety
