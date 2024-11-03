@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Marketing Tips: How to Maximize Your Campaign Effectiveness
+title: Email Marketing Tips How to Maximize Your Campaign Effectiveness
 description: Discover essential tips to enhance the effectiveness of your email marketing campaigns and engage your audience.
 summary: Learn how to maximize your email marketing campaigns with proven strategies and best practices to boost engagement and conversions.
 tags: email marketing digital marketing campaigns engagement
