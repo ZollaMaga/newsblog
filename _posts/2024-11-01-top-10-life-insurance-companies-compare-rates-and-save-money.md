@@ -3,7 +3,7 @@ layout: post
 title: Top 10 Life Insurance Companies Compare Rates and Save Money
 description: Discover the top life insurance companies, compare their rates, and learn how to save money on your policy.
 summary: Discover the top life insurance companies, compare their rates, and learn how to save money on your policy.
-tags: insurance, finance, life insurance
+tags: insurance finance life insurance
 minute: 5
 ---
 
