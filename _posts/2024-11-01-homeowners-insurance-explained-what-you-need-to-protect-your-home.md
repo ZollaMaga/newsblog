@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Homeowners Insurance Explained: What You Need to Protect Your Home
+title: Homeowners Insurance Explained What You Need to Protect Your Home
 description: Understand the key aspects of homeowners insurance and learn how to choose the right policy to protect your home and belongings.
 summary: Homeowners insurance is essential for protecting your home and belongings. This guide explains what it covers, why you need it, and how to choose the best policy.
 tags: homeowners insurance home protection finance
