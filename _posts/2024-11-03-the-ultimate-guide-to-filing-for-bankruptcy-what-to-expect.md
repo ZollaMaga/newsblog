@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Ultimate Guide to Filing for Bankruptcy: What to Expect
+title: The Ultimate Guide to Filing for Bankruptcy What to Expect
 description: Navigating the bankruptcy process can be overwhelming. This guide provides essential information on what to expect when filing for bankruptcy.
 summary: Learn about the bankruptcy process, types of bankruptcy, what to expect during filing, and tips for rebuilding your financial future.
 tags: bankruptcy filing guide financial recovery
