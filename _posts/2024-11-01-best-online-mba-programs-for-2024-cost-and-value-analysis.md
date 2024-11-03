@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Best Online MBA Programs for 2024: Cost and Value Analysis
+title: Best Online MBA Programs for 2024 Cost and Value Analysis
 description: Explore the top online MBA programs for 2024, analyzing their costs and the value they offer to prospective students.
 summary: Discover the best online MBA programs for 2024, comparing costs and value to help you make an informed decision about your education.
 tags: online MBA education finance analysis
