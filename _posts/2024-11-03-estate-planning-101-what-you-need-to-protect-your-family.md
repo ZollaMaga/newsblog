@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Estate Planning 101: What You Need to Protect Your Family
+title: Estate Planning 101 What You Need to Protect Your Family
 description: Learn the basics of estate planning and how to ensure your family's financial security and peace of mind.
 summary: Discover essential estate planning strategies, including wills, trusts, and other important documents, to protect your family's future.
 tags: estate planning family protection
