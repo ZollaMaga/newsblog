@@ -1,6 +1,8 @@
 <!-- begin post -->
         {% for post in site.posts %}
 <div class="tg-channel-wrapper is-list">
+<div class="tg-channel">
+<div class="tg-channel-options"><span class="tg-options-public">Public</span></div>
 <div class="tg-onclick">
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
         <div class="tg-channel-img">{% if post.image %} <img class="rounded mb-4" src="{{ post.image }}" alt="{{ post.title }}"> {% endif %}</div>
@@ -8,7 +10,8 @@
 		<h2 class="card-title h4 serif-font"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
 </div>
-</div>	
+</div>
+</div>
         {% endfor %}
 <!-- end post -->
 
