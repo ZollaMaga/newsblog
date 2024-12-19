@@ -15,7 +15,80 @@
         {% endfor %}
 <!-- end post -->
 
-<style>.tg-channels .tg-channel-wrapper .tg-channel-img {
+<style>.tg-channels .tg-channel-wrapper {
+  font-size: 17px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 17rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel {
+  margin: 3px;
+  padding: 10px;
+  background: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 3rem;
+  padding: 10rem;
+  -moz-border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  border-radius: 3rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel:hover {
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.tg-channels .tg-channel-wrapper .tg-channel.is-ads {
+  background: #f0f8ff;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options {
+  font-size: 10.2px;
+  margin-bottom: 5px;
+  font-size: 10.2rem;
+  margin-bottom: 5rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-deleted, .tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-private, .tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-public, .tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-sale, .tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-ads {
+  margin-right: 5px;
+  padding: 1px 5px;
+  color: #fff;
+  background: #4d4;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-right: 5rem;
+  padding: 1rem 5rem;
+  -moz-border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  border-radius: 3rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-deleted {
+  background: #222;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-private {
+  background: #f44;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-sale {
+  background: #66b;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-sale a {
+  color: #fff;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-options .tg-options-ads {
+  background: #3af;
+}
+.tg-channels .tg-channel-wrapper .tg-onclick {
+  position: relative;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-img {
   font-size: 8.5px;
   float: left;
   overflow: hidden;
@@ -33,6 +106,276 @@
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-link, .tg-channels .tg-channel-wrapper .tg-channel-user, .tg-channels .tg-channel-wrapper .tg-channel-description, .tg-channels .tg-channel-wrapper .tg-channel-more, .tg-channels .tg-channel-wrapper .tg-ya-share {
+  margin-left: 102px;
+  margin-left: 102rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-link {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-link a {
+  font-size: 20.4px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 20.4rem;
+  letter-spacing: -1rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-link a:before {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+.tg-channels .tg-channel-wrapper .tg-channel-user {
+  font-weight: 600;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-user .tg-user-count {
+  margin-left: 5px;
+  margin-left: 5rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-user .tg-user-change {
+  margin-left: 5px;
+  margin-left: 5rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-user .tg-user-change.is-plus {
+  color: #4d4;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-user .tg-user-change.is-minus {
+  color: #f44;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-description {
+  overflow: hidden;
+  height: 2.8em;
+  word-break: break-word;
+  color: #333;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-description:empty:before {
+  display: block;
+  overflow: hidden;
+  height: 2.8em;
+  content: '░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░';
+}
+.tg-channels .tg-channel-wrapper .tg-channel-categories {
+  clear: both;
+  overflow: hidden;
+  margin: 0 -10px -10px -10px;
+  padding: 5px 10px;
+  cursor: default;
+  white-space: nowrap;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 0 -10rem -10rem -10rem;
+  padding: 5rem 10rem;
+  -moz-border-radius-bottomright: 5rem;
+  -webkit-border-bottom-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  -moz-border-radius-bottomleft: 5rem;
+  -webkit-border-bottom-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-categories a {
+  font-size: 15.3px;
+  margin-right: 5px;
+  display: inline-block;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 15.3rem;
+  margin-right: 5rem;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-header {
+  line-height: 1;
+  margin: 5px 5px 5px 0;
+  margin: 5rem 5rem 5rem 0;
+}
+.tg-channels .tg-channel-wrapper .tg-channel-header a:before {
+  position: relative;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-more span, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more a, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more span {
+  cursor: pointer;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  border-radius: 3rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a:after, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-more span:after, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more a:after, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more span:after {
+  font-family: "tgramicon" !important;
+  font-size: 25.5px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  vertical-align: middle;
+  text-transform: none;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 25.5rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.app, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more a.app {
+  font-weight: 600;
+  line-height: 1.5;
+  width: 215px;
+  height: 25.5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #07c;
+  background: linear-gradient(90deg, #0077cc, #33aaff);
+  width: 215rem;
+  height: 25.5rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.app:after, .tg-channels .tg-channel-wrapper.is-ads .tg-channel-more a.app:after {
+  margin-left: 5px;
+  margin-left: 5rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail {
+  width: 100%;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-img {
+  font-size: 8.5px;
+  float: none;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 20px 0;
+  background-image: -moz-radial-gradient(circle, rgba(220, 220, 220, 0.4) 0%, #ffffff 75%);
+  background-image: -webkit-radial-gradient(circle, rgba(220, 220, 220, 0.4) 0%, #ffffff 75%);
+  background-image: radial-gradient(circle, rgba(220, 220, 220, 0.4) 0%, #ffffff 75%);
+  font-size: 8.5rem;
+  margin-bottom: 10rem;
+  padding: 20rem 0;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-img img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -moz-box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.7);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.7);
+  box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.7);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 120rem;
+  height: 120rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-link, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-user, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-description, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-more, .tg-channels .tg-channel-wrapper.is-detail .tg-ya-share {
+  margin-left: 0;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-link {
+  white-space: normal;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-link a {
+  font-size: 23.8px;
+  font-size: 23.8rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-description {
+  height: auto;
+  min-height: 2.8em;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.web, .tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.eye {
+  width: 25.5px;
+  height: 25.5px;
+  margin-left: 5px;
+  padding: 9px;
+  color: #000;
+  background: linear-gradient(90deg, #eeeeee, #ffffff);
+  width: 25.5rem;
+  height: 25.5rem;
+  margin-left: 5rem;
+  padding: 9rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.web:after {
+  content: "\e9c9";
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more a.eye:after {
+  content: "\e9ce";
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more span.qr {
+  width: 25.5px;
+  height: 25.5px;
+  margin-left: 5px;
+  padding: 9px;
+  color: #000;
+  background: linear-gradient(90deg, #eeeeee, #ffffff);
+  width: 25.5rem;
+  height: 25.5rem;
+  margin-left: 5rem;
+  padding: 9rem;
+}
+.tg-channels .tg-channel-wrapper.is-detail .tg-channel-more span.qr:after {
+  content: "\e938";
+}
+.tg-channels .tg-channel-wrapper.is-ads .tg-channel-more {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tg-channels .tg-channel-wrapper.is-ads .tg-channel-more a.app {
+  width: 100%;
+  min-width: 190px;
+  max-width: 215px;
+  min-width: 190rem;
+  max-width: 215rem;
+}
+.tg-channels .tg-channel-wrapper.is-ads {
+  width: 50%;
+}
+.tg-channels .tg-channel-wrapper.is-ads .tg-channel-link {
+  white-space: normal;
+}
+.tg-channels .tg-channel-wrapper.is-ads .tg-channel-description {
+  height: 4.2em;
+}
+.tg-channels .tg-channel-wrapper.is-ads .tg-channel-more {
+  margin-top: 5px;
+  margin-top: 5rem;
 }</style>
 
 
