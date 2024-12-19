@@ -37,6 +37,8 @@ At Pottoin.com, we understand that each decision you make can have significant i
     <ul id="search-results"></ul>
 </div>
 
+
+
 <section class="posts" id="Blog">
   <div class="col-sm-8">
     <div class="row">
@@ -47,5 +49,15 @@ At Pottoin.com, we understand that each decision you make can have significant i
       </div>
       {% endunless %}
       {% endfor %}
-    </div> </div>
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
 </section>
