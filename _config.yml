@@ -68,7 +68,7 @@ collections:
     permalink: /:name
   posts:
     output: true
-    permalink: /:join/:slug
+    permalink: /posts/:title/
   
 defaults:
   -
