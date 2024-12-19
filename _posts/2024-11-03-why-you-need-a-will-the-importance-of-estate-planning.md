@@ -2,6 +2,7 @@
 layout: post
 title: Why You Need a Will The Importance of Estate Planning
 description: Understand the critical role of having a will and the importance of estate planning for your family's future.
+image: https://www.summerislive.com/assets/images/kidsplaygroundsiargaocover.png
 summary: Discover why creating a will is essential for effective estate planning and how it can protect your loved ones.
 tags: estate planning wills importance of wills legal advice
 minute: 7
