@@ -1,5 +1,9 @@
 <!-- begin post -->
         {% for post in site.posts %}
+
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
+        {% if post.image %} <img class="rounded mb-4" src="{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+    </a>
 		<h2 class="card-title h4 serif-font"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
        
