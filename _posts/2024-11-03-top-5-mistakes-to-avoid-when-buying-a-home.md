@@ -3,6 +3,7 @@ layout: post
 title: Top 5 Mistakes to Avoid When Buying a Home
 description: Discover the key mistakes to avoid during your home buying journey to make informed decisions and protect your investment.
 summary: This article outlines the top five common mistakes homebuyers make and provides essential tips for a successful home purchase.
+image: https://www.summerislive.com/assets/images/kidsplaygroundsiargaocover.png
 tags: home buying mistakes real estate tips homeowners
 minute: 8
 ---
