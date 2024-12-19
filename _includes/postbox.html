@@ -5,7 +5,7 @@
 <div class="tg-channel-options"><span class="tg-options-public">Public</span></div>
 <div class="tg-onclick">
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        <div class="tg-channel-img">{% if post.image %} <img class="rounded mb-4" src="{{ post.image }}" alt="{{ post.title }}"> {% endif %}</div>
+        <div class="posts-thumb">{% if post.image %} <img class="rounded mb-4" src="{{ post.image }}" alt="{{ post.title }}"> {% endif %}</div>
     </a>
 		<h2 class="card-title h4 serif-font"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
@@ -18,7 +18,8 @@
 <style>
 .hfeed{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:22px}
 @media only screen and (max-width:580px){.hfeed{grid-template-columns:repeat(2,1fr)}}
-.post-price{font-size:14px;font-weight:700;color:#444}.hentry{position:relative;display:flex;flex-direction:column;background-color:var(--main-bg);overflow:hidden;padding:8px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.02)}.entry-title a{color:#cc1515;width:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.posts-thumb{width:100%;height:auto;overflow:hidden;position:relative;border-radius:8px 8px 0 0}
+.post-price{font-size:14px;font-weight:700;color:#444}.hentry{position:relative;display:flex;flex-direction:column;background-color:var(--main-bg);overflow:hidden;padding:8px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.02)}.entry-title a{color:#cc1515;width:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.posts-thumb{width:100%;height:auto;overflow:hidden;position:relative;border-radius:8px 8px 0 0}
 </style>
 
 
