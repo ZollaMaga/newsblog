@@ -20,7 +20,7 @@
   {% if page.tags %}
     {% for tag in page.tags %}
       <li style="--clr-tag:#d3b19a;" class="branding">
-        <a href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+        <a href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>
       </li>
     {% endfor %}
   {% else %}
