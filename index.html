@@ -56,3 +56,56 @@ At Pottoin.com, we understand that each decision you make can have significant i
     {% endif %}
 </nav>
 
+<style>/* Styling untuk pagination */
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .page-number {
+  font-size: 16px;
+  padding: 10px;
+  color: #333;
+  margin: 0 10px;
+}
+
+.pagination .newer-posts,
+.pagination .older-posts {
+  font-weight: bold;
+}
+
+.pagination a[disabled] {
+  background-color: #e0e0e0;
+  border: 1px solid #d1d1d1;
+  color: #999;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .pagination a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .pagination .page-number {
+    font-size: 14px;
+  }
+}
+</style>
