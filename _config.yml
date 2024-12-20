@@ -5,6 +5,7 @@ description: >-
   just a minimalist, personal blog
 lang: en-US
 timezone:  America/New_York
+paginate: 30
 repo: https://github.com/ZollaMaga/newsblog/ # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 discus-identifier: powex # replace with your disqus shortname
