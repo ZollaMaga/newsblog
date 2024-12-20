@@ -1,0 +1,14 @@
+<section class="posts">
+  <div class="flex-row-between">
+    <h1>Category #{{ page.category }}</h1>
+    <a href="{{ site.url }}{{ site.baseurl }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+  </div>
+  <ul>
+    {% for post in site.posts %}
+      {% if post.categories contains page.category %}
+        <li><a class="post" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
