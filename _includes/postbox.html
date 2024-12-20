@@ -1,40 +1,36 @@
 <!-- begin post -->
-        {% for post in site.posts %}
+{% for post in site.posts %}
 <div class="card">
-      <div class="card-inner" style="--clr:#fff;">
-        <div class="box">
-          <div class="imgBox">
-           {% if post.image %} <img src="{{ post.image }}" alt="{{ post.title }}">{% endif %}
-          </div>
-          <div class="icon">
-            <a href="#" class="iconBox"> <span class="material-symbols-outlined">
-                arrow_outward
-              </span></a>
-          </div>
-        </div>
+  <div class="card-inner" style="--clr:#fff;">
+    <div class="box">
+      <div class="imgBox">
+        {% if post.image %} <img src="{{ post.image }}" alt="{{ post.title }}">{% endif %}
       </div>
-      <div class="content">
-        <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        <p>Fill out the form and the algorithm will offer the right team of experts</p>
-<ul>
-  {% assign displayed_categories = "" %}
-  {% for post in site.posts %}
-    {% for category in post.categories %}
-      {% unless displayed_categories contains category %}
-        <li style="--clr-tag:#d3b19a;" class="branding">
-          <a href="{{ site.url }}/category/{{ category }}">{{ category }}</a>
-        </li>
-        {% assign displayed_categories = displayed_categories | append: category %}
-      {% endunless %}
-    {% endfor %}
-  {% endfor %}
-</ul>
-
-              
+      <div class="icon">
+        <a href="#" class="iconBox"> 
+          <span class="material-symbols-outlined">arrow_outward</span>
+        </a>
       </div>
     </div>
+  </div>
+  <div class="content">
+    <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <p>Fill out the form and the algorithm will offer the right team of experts</p>
+    <ul>
+      {% assign displayed_categories = "" %}
+      {% for category in post.categories %}
+        {% unless displayed_categories contains category %}
+          <li style="--clr-tag:#d3b19a;" class="branding">
+            <a href="{{ site.url }}/category/{{ category }}">{{ category }}</a>
+          </li>
+          {% assign displayed_categories = displayed_categories | append: category %}
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endfor %}
 
-        {% endfor %}
 <!-- end post -->
 
 <style>
