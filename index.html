@@ -79,169 +79,141 @@ At Pottoin.com, we understand that each decision you make can have significant i
 </div>
 </section>
 
-{% if paginator.total_pages > 1 %}
-  {% assign start = paginator.page | minus: 2 %}
-  {% assign end = paginator.page | plus: 2 %}
-
-  {% if start < 1 %}
-    {% assign start = 1 %}
-    {% assign end = start | plus: 4 %}
-  {% elsif end > paginator.total_pages %}
-    {% assign start = paginator.total_pages | minus: 4 %}
-    {% assign end = paginator.total_pages %}
-  {% endif %}
-
-  {% if start < 1 %}
-    {% assign start = 1 %}
-  {% endif %}
-
-  {% if end > paginator.total_pages %}
-    {% assign end = paginator.total_pages %}
-  {% endif %}
-
-  <div class="Pagination">
-    <div class="Pagination-inner">
-      <!-- Tombol Previous -->
-      {% if paginator.previous_page %}
-        <a class="Pagination-link Pagination-link--arrow" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Go to previous page">
-          <span class="Pagination-arrow Pagination-arrow--left"></span>
-        </a>
-      {% else %}
-        <span class="Pagination-link Pagination-link--arrow Pagination-link--inactive">
-          <span class="Pagination-arrow Pagination-arrow--left"></span>
-        </span>
-      {% endif %}
-
-      <!-- Halaman 1 -->
-      {% if start > 1 %}
-        <a class="Pagination-link" href="{{ site.baseurl }}/join/page1/" aria-label="Go to page 1">1</a>
-        <div class="Pagination-separator"></div>
-      {% endif %}
-
-      <!-- Halaman Tengah -->
-      {% for page in (start..end) %}
-        {% if page == paginator.page %}
-          <a class="Pagination-link Pagination-link--active" aria-label="Go to page {{ page }}">{{ page }}</a>
-        {% else %}
-          <a class="Pagination-link" href="{{ site.baseurl }}/join/page{{ page }}/" aria-label="Go to page {{ page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-
-      <!-- Halaman Terakhir -->
-      {% if end < paginator.total_pages %}
-        <div class="Pagination-separator"></div>
-        <a class="Pagination-link" href="{{ site.baseurl }}/join/page{{ paginator.total_pages }}/" aria-label="Go to page {{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
-      {% endif %}
-
-      <!-- Tombol Next -->
-      {% if paginator.next_page %}
-        <a class="Pagination-link Pagination-link--arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Go to next page">
-          <span class="Pagination-arrow Pagination-arrow--right"></span>
-        </a>
-      {% else %}
-        <span class="Pagination-link Pagination-link--arrow Pagination-link--inactive">
-          <span class="Pagination-arrow Pagination-arrow--right"></span>
-        </span>
-      {% endif %}
-    </div>
-  </div>
-{% endif %}
+ {% include pagination.html %}
 
 
 
 
 <style>
-/* Container Pagination */
+
+/* Literal.Number.Integer.Long */
 .Pagination {
+  margin-top: 50px;
+  margin-bottom: 10px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-/* Pagination Inner */
 .Pagination-inner {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Tombol Previous dan Next */
-.Pagination-link--arrow {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 0 5px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
   font-size: 18px;
+  height: 30px;
+  line-height: 10px;
 }
 
-.Pagination-link--arrow:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
-}
-
-/* Menandai Halaman Aktif */
-.Pagination-link--active {
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  border-radius: 50%;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
-}
-
-.Pagination-link--active:hover {
-  background-color: #0056b3;
-}
-
-/* Link Halaman */
 .Pagination-link {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 0 5px;
-  background-color: #f1f1f1;
-  color: #007bff;
+  align-items: center;
+  border-radius: 50%;
+  color: #333333;
+  display: flex;
+  height: 100%;
+  justify-content: center;
   text-decoration: none;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: color 250ms;
+  width: 30px;
 }
-
 .Pagination-link:hover {
-  background-color: #e2e2e2;
-  transform: scale(1.1);
+  color: #4183C4;
+}
+@media screen and (max-width: 640px) {
+  .Pagination-link {
+    display: none;
+  }
 }
 
-/* Separator */
+.Pagination-link--arrow {
+  display: flex;
+}
+
+.Pagination-link--inactive,
+.Pagination-link--inactive:hover {
+  background: transparent;
+  color: #333333;
+  opacity: 0.3;
+}
+
+.Pagination-link--active,
+.Pagination-link--active:hover {
+  background: #4183C4;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0 03px;
+}
+@media screen and (max-width: 640px) {
+  .Pagination-link--active,
+  .Pagination-link--active:hover {
+    display: flex;
+    margin: 0 10px;
+  }
+}
+
 .Pagination-separator {
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 18px;
-  color: #007bff;
+  margin: 0 12px;
+  position: relative;
 }
 
-/* Tombol Inactive */
-.Pagination-link--inactive {
-  background-color: #ddd;
-  color: #aaa;
-  cursor: not-allowed;
+.Pagination-separator,
+.Pagination-separator::before,
+.Pagination-separator::after {
+  background: #DDDDDD;
   border-radius: 50%;
-  padding: 10px 15px;
+  content: '';
+  display: block;
+  height: 03px;
+  width: 03px;
 }
-
-/* Responsif */
-@media (max-width: 768px) {
-  .Pagination-link, .Pagination-link--arrow {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .Pagination-separator {
-    font-size: 14px;
+@media screen and (max-width: 640px) {
+  .Pagination-separator,
+  .Pagination-separator::before,
+  .Pagination-separator::after {
+    display: none;
   }
 }
+
+.Pagination-separator::before {
+  position: absolute;
+  top: 0;
+  transform: translateX(-6px);
+}
+
+.Pagination-separator::after {
+  position: absolute;
+  top: 0;
+  transform: translateX(6px);
+}
+
+.Pagination-arrow {
+  width: 12px;
+}
+
+.Pagination-arrow::before,
+.Pagination-arrow::after {
+  background: #333333;
+  content: '';
+  display: block;
+  height: 15px;
+  transition: background 250ms;
+  width: 02px;
+}
+
+.Pagination-arrow::before {
+  transform: rotateZ(40deg);
+  transform-origin: bottom left;
+}
+
+.Pagination-arrow::after {
+  transform: rotateZ(-40deg);
+  transform-origin: top left;
+}
+
+.Pagination-arrow--right {
+  transform: rotateZ(180deg);
+}
+
+.Pagination-link:hover .Pagination-arrow::before,
+.Pagination-link:hover .Pagination-arrow::after {
+  background: #4183C4;
+}
+
 
 </style>
