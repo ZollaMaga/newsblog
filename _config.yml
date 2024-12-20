@@ -11,7 +11,6 @@ discus-identifier: powex # replace with your disqus shortname
 comments-enabled: false # true to enable disqus comments, false to hide them
 
 paginate: 10
-paginate_path: "/join/page:num/"
 
 author:
   name: gesko
