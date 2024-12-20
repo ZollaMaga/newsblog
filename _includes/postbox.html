@@ -16,10 +16,14 @@
       <div class="content">
         <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>Fill out the form and the algorithm will offer the right team of experts</p>
-        <ul class="meta">
-         {% for tag in page.tags %}
-          <li style="--clr-tag:#d3b19a;" class="branding"><a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</li>
-        </ul>     
+<ul class="meta">
+    {% for tag in page.tags %}
+      <li style="--clr-tag:#d3b19a;" class="branding">
+        <a href="{{ site.url }}{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+        {% unless forloop.last %}, {% endunless %}
+      </li>
+    {% endfor %}
+</ul>    
       </div>
     </div>
 
