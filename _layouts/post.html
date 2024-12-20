@@ -37,10 +37,9 @@ layout: default
 }
 
 .container-image {
-  width: 20%; /* Adjust width to a percentage of the container */
+  width: 100%; /* Adjust width to a percentage of the container */
   max-width: 150px; /* Maximum size */
-  height: 0;
-  padding-top: 20%; /* Maintain aspect ratio (square) */
+  height: 150px;
   overflow: hidden;
   border-radius: 50%;
   display: flex;
@@ -101,13 +100,7 @@ layout: default
     padding: 10px;
     text-align: center;
   }
-
-  /* Make image container smaller and centered on smaller screens */
   .container-image {
-    width: 25%; /* Increase size on small screens */
-    max-width: 120px;
-    height: 0;
-    padding-top: 25%; /* Maintain aspect ratio */
     margin: 0 auto;
   }
 
