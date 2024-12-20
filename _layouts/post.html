@@ -10,7 +10,8 @@ layout: default
       <div></div>
     </button>
   </div>
-
+	
+<div class="tg-channel-options"><span class="tg-options-public">public</span></div>
 <div class="container-post">
         <div class="container-image">
 {% if page.image %}<img style="height: 100%;width: 100%;" class="lazyload" src="{{ page.image }}" alt="{{ page.title }}">{% endif %}
@@ -31,14 +32,13 @@ layout: default
 .container-post {
   display: flex;
   padding: 8px;
-  border: 1px solid #ddd;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .container-image {
   width: 200%; 
-  max-width: 150px; /* Maximum size */
+  max-width: 150px;
   height: 150px;
   overflow: hidden;
   border-radius: 50%;
