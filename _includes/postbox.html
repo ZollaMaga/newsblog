@@ -17,11 +17,16 @@
         <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>Fill out the form and the algorithm will offer the right team of experts</p>
 <ul>
-  {% for category in site.categories %}
-    <li style="--clr-tag:#d3b19a;" class="branding">
-      <a href="{{ site.url }}/category/{{ category[0] }}">{{ category[0] }}</a>
-      {% unless forloop.last %}, {% endunless %}
-    </li>
+  {% assign displayed_categories = "" %}
+  {% for post in site.posts %}
+    {% for category in post.categories %}
+      {% unless displayed_categories contains category %}
+        <li style="--clr-tag:#d3b19a;" class="branding">
+          <a href="{{ site.url }}/category/{{ category }}">{{ category }}</a>
+        </li>
+        {% assign displayed_categories = displayed_categories | append: category %}
+      {% endunless %}
+    {% endfor %}
   {% endfor %}
 </ul>
 
