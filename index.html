@@ -151,7 +151,7 @@ At Pottoin.com, we understand that each decision you make can have significant i
 
 
 <style>
-	/* Container Pagination */
+/* Container Pagination */
 .Pagination {
   text-align: center;
   margin-top: 20px;
@@ -162,22 +162,26 @@ At Pottoin.com, we understand that each decision you make can have significant i
 .Pagination-inner {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Tombol Previous dan Next */
 .Pagination-link--arrow {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0 5px;
   background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 50%;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
 }
 
 .Pagination-link--arrow:hover {
   background-color: #0056b3;
+  transform: scale(1.1);
 }
 
 /* Menandai Halaman Aktif */
@@ -185,6 +189,13 @@ At Pottoin.com, we understand that each decision you make can have significant i
   background-color: #007bff;
   color: white;
   font-weight: bold;
+  border-radius: 50%;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.Pagination-link--active:hover {
+  background-color: #0056b3;
 }
 
 /* Link Halaman */
@@ -195,18 +206,21 @@ At Pottoin.com, we understand that each decision you make can have significant i
   background-color: #f1f1f1;
   color: #007bff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Pagination-link:hover {
   background-color: #e2e2e2;
+  transform: scale(1.1);
 }
 
 /* Separator */
 .Pagination-separator {
   display: inline-block;
   margin: 0 5px;
+  font-size: 18px;
+  color: #007bff;
 }
 
 /* Tombol Inactive */
@@ -214,6 +228,20 @@ At Pottoin.com, we understand that each decision you make can have significant i
   background-color: #ddd;
   color: #aaa;
   cursor: not-allowed;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .Pagination-link, .Pagination-link--arrow {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .Pagination-separator {
+    font-size: 14px;
+  }
 }
 
 </style>
