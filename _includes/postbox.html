@@ -1,12 +1,14 @@
-<!-- begin post -->
-{% for post in site.posts %}
+<!-- Begin Post Loop -->
+{% for post in paginator.posts %}
 <div class="card">
   <div class="card-inner" style="--clr:#fff;">
     <div class="box">
       <div class="imgBox">
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-        {% if post.image %} <img src="{{ post.image }}" alt="{{ post.title }}">{% endif %}
-         </a>
+          {% if post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+          {% endif %}
+        </a>
       </div>
       <div class="icon">
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="iconBox">
@@ -32,8 +34,21 @@
   </div>
 </div>
 {% endfor %}
+<!-- End Post Loop -->
 
-<!-- end post -->
+<!-- Pagination Navigation -->
+<nav class="pagination" role="pagination">
+    {% if paginator.previous_page %}
+        <a class="newer-posts" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Previous Page">&laquo; Newer</a>
+    {% endif %}
+    
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+        <a class="older-posts" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page">Older &raquo;</a>
+    {% endif %}
+</nav>
+
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
