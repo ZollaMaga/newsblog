@@ -13,7 +13,7 @@ comments-enabled: false # true to enable disqus comments, false to hide them
 pagination:
   enabled: true
   per_page: 10  
-  permalink: '/page:num/'
+  permalink: '/join/page:num/'
 
 
 author:
