@@ -27,7 +27,7 @@ layout: default
     </div>
 
 <style>
-	.container-post {
+.container-post {
   display: flex;
   padding: 8px;
   border: 1px solid #ddd;
@@ -37,22 +37,25 @@ layout: default
 }
 
 .container-image {
-  width: 150px; /* Set fixed width for the image container */
+  width: 150px; /* Set a fixed width for larger screens */
   height: 150px; /* Set fixed height to make the image circular */
-  overflow: hidden; /* Hide the part of the image outside the circular container */
-  border-radius: 50%; /* Make the image container circular */
+  overflow: hidden; /* Hide any part of the image that exceeds the container */
+  border-radius: 50%; /* Apply circular border-radius to the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+  width: 100%; /* Fill the container's width */
+  height: 100%; /* Ensure the height is equal to the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
   border-radius: 50%; /* Apply circular border-radius to the image itself */
 }
 
 .container-details {
   padding-left: 20px;
-  flex-grow: 1; /* Ensure this section takes available space */
+  flex-grow: 1; /* Allow this section to grow and take remaining space */
 }
 
 .container-details h1 {
@@ -96,6 +99,7 @@ layout: default
     text-align: center;
   }
 
+  /* Make image container smaller and centered on smaller screens */
   .container-image {
     width: 120px;
     height: 120px;
@@ -114,6 +118,7 @@ layout: default
     font-size: 18px;
   }
 }
+
 </style>
 
 	  <span class="meta">
