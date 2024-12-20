@@ -13,11 +13,25 @@ layout: default
   {% assign minute=content | number_of_words | divided_by: 265 | plus: 1 %}
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }} -  
     {% if page.minute %} {{ page.minute }} {% else %} {{ minute }} {% endif %}' read</time>
-  <h1 class="title">{{ page.title }}</h1>
-  <span class="meta">
+
+<div class="product-container">
+        <div class="product-image">
+{% if page.image %}<img style="height: 100%;width: 100%;" class="lazyload" src="{{ page.image }}" alt="{{ page.title }}">{% endif %}
+        </div>
+        <div class="product-details">
+        <h1 class="title">{{ page.title }}</h1>
+        <p class="price">Rp.100.00</p>
+        <p class="product-description">{{ content }}</p>
+        <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+<style>.product-container{display:flex;padding:8px;border:1px solid #ddd;max-width:800px;margin:0 auto}.product-image img{max-width:100%;height:auto}.product-details{padding-left:20px}.product-details h2{font-size:16px;color:#cc1515;font-weight:700}.product-title{font-size:24px;margin:0 0 10px 0}.product-description{font-size:16px;margin-bottom:10px}.price{font-size:20px;color:#cc1515;margin-bottom:15px}.add-to-cart{background-color:#cc1515;color:#fff;border:none;padding:10px 20px;cursor:pointer;font-size:16px;border-radius:5px;transition:background-color 0.3s ease}.add-to-cart:hover{background-color:#066}@media (max-width:768px){.product-container{display:block;padding:10px;text-align:center}.product-image img{width:100%;max-height:300px}.product-details{padding:10px}}</style>
+
+	  <span class="meta">
     {% for tag in page.tags %}
     <a href="{{ site.url }}{{ site.baseurl }}/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
-  {{ content }}
+
 </section>
 
 <section>
