@@ -42,69 +42,20 @@ At Pottoin.com, we understand that each decision you make can have significant i
  {% include postbox.html %}
 </div>
 </section>
-<!-- Pagination Navigation -->
-<nav class="pagination" role="pagination">
-    {% if paginator.previous_page %}
-        <a class="newer-posts" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Previous Page">&laquo; Newer</a>
-    {% endif %}
-    
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-    {% if paginator.next_page %}
-        <a class="older-posts" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Next Page">Older &raquo;</a>
-    {% endif %}
-</nav>
-
-<style>/* Styling untuk pagination */
-.pagination {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.pagination a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.pagination a:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-.pagination .page-number {
-  font-size: 16px;
-  padding: 10px;
-  color: #333;
-  margin: 0 10px;
-}
-
-.pagination .newer-posts,
-.pagination .older-posts {
-  font-weight: bold;
-}
-
-.pagination a[disabled] {
-  background-color: #e0e0e0;
-  border: 1px solid #d1d1d1;
-  color: #999;
-  pointer-events: none;
-}
-
-@media (max-width: 600px) {
-  .pagination a {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .pagination .page-number {
-    font-size: 14px;
-  }
-}
-</style>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        前一页
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        后一页
+      </a>
+    </span>
+  {% endif %}
+</div>
