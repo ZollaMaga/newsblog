@@ -1,7 +1,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {%- seo -%}
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | escape }}" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}" />
+  <meta property="og:description" content="{{ page.description | escape }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ site.url }}{{ site.logo }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}" />
+  <meta name="twitter:description" content="{{ page.description | escape }}" />
+
   <meta name="description" content="Pottoin.com is your go-to source for expert insights on Insurance, Online Education, Online Banking, Marketing & Advertising, Legal matters, and Automobile Dealerships. Empower yourself with knowledge to make informed decisions today!">
   <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
