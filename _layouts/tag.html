@@ -2,11 +2,15 @@
 layout: default
 ---
 
+---
+layout: default
+---
+
 <section>
   <h1>Tag #{{ page.tag }}</h1>
   <div class="container">
     <!-- begin post -->
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.tags contains page.tag %}
         <div class="card">
           <div class="card-inner" style="--clr:#fff;">
@@ -51,8 +55,4 @@ layout: default
     <!-- end post -->
   </div>
 </section>
-
-<!-- Include pagination only if there are multiple pages -->
-{% if paginator.pages > 1 %}
-  {% include pagination.html %}
-{% endif %}
+ {% include pagination.html %}
