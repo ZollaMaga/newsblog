@@ -2,6 +2,7 @@ site: Pottoin
 title: Pottoin
 greetings: Pottoin! 👋
 description: just a minimalist, personal blog
+avatar: /assets/image/avatar.png
 lang: en-US
 timezone:  America/New_York
 repo: https://github.com/ZollaMaga/newsblog/ # site repo [optional]
