@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTB3QWPYCR"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag() { dataLayer.push(arguments); }
-   gtag('js', new Date());
-
-   gtag('config', 'G-NTB3QWPYCR');
- </script>
-
-
-
-
 <body>
+<div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" width="70" height="70" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav class="nav-menu">
+            {% include navigation.html %}
+          </nav>
+        </header>
+      </div>
+    </div>
   <main>
    {% include anchor_headings.html html=content anchorBody="#" %}
   </main>
