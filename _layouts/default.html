@@ -80,21 +80,4 @@ nav a{margin-left:20px;color:#333;text-align:right;font-weight:400;letter-spacin
 © 2024 pottoin.com — unofficial catalog and search on Telegram channels.
 </footer>
 
-
-{% if page.url == '/' %}
-  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/simple-jekyll-search.js"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-		      json: '{{ site.url }}{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
-  {% endif %}
-
-
 </html>
